@@ -20,6 +20,13 @@ class CPPLib {
   
   // // Flatten a 2D vector
   std::vector<int> Flatten2DVector(const std::vector<std::vector<int>>&input);
+
+  //q6 
+  bool canBePalindrome(const std::string &str);
+
+  //q8
+  void kthPeek(std::vector<int> &input);
+
   private : 
 };
 
