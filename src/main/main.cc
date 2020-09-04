@@ -1,10 +1,13 @@
 #include <iostream>
 #include "src/lib/cpplib.h"
 
+using namespace std;
+
 int main() {
   // Print Hello world!
   CPPLib s;
-  std::cout << s.PrintIntro() << std::endl;
+
+  cout << s.PrintHelloWorld() << endl;
   
   return 0;
 }
