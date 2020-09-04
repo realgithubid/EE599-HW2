@@ -6,6 +6,6 @@
 #include "gtest/gtest.h"
 
 // Add your own tests in this file
-TEST(Q7_Student, ReturnIntro) {
+TEST(Q7_Student, ReturnMap) {
   EXPECT_EQ(true, true);
 }

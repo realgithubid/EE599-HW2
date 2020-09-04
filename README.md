@@ -112,7 +112,7 @@ Stack Overflow profile link:
 
 ## Question 5 (15 Points. Easy)
 
-- Write a function that takes a string as an input and **reverses** its value. The function has no output. It changes the value of the input parameter. Write a simple function ```void CPPLib::Q5ReverseString(std::string &input)``` in [cpplib.cc](src/lib/cpplib.cc)
+- Write a function that takes a string as an input and **reverses** its value. The function has no output. It changes the value of the input parameter. Write a simple function ```void CPPLib::Q5ReverseString(std::string &input)``` in [cpplib.cc](src/lib/cpplib.cc). *You are welcomed to call existing STL functions*.
 
     - Example: Input: “EE599”, Output: “995EE”, string is stricted to be alphanumeric.
     - You cannot use any new local variable of type *string or vector or array*, but you can create extra O(1) space, such as *int*. The reverse should happen **in place** (i.e. on the input string).
@@ -152,11 +152,12 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q6_student_test
 ```
 
-## Question 7 (30 Points. Medium)
+## Question 7 (20 Points. Medium)
 
-Write a function ```map CPPLib::CalFactorial(const string& from, const string& to)``` in [cpplib.cc](src/lib/cpplib.cc). 
+Write a function ```std::map<char, char> CPPLib::CalFactorial(const std::string& from, const std::string& to)``` in [cpplib.cc](src/lib/cpplib.cc). 
 Write a function that takes two strings from and to and determines if they are mappable.
 - Two strings are mappable if the characters in from can be replaced to get to.
+- You can assume characters are strictly lower cases.  
 - Each character can only map to itself.
 - The output should be a map:
     - Empty map if the mapping is not possible
@@ -172,7 +173,7 @@ Output: { }
 
 Example 3:
 Input: from = "harder", to = "waiter”
-Output: { }
+Output: { }, because you cannot map 'r' to 'i' and 'r' at the same time!
 
 Example 4:
 Input: from = "aabbrr", to = "ddeekk”
@@ -180,27 +181,10 @@ Output: {(a->d),(b->e), (r->k)}
 
 Further, write several tests using GTest for your function in [tests/q7_student_test.cc](tests/q7_student_test.cc) and compute the time complexity of your implementation.
 
-*Definition of the factorial function*\
-In mathematics, the factorial of a positive integer n, denoted by n!, is the product of all positive integers less than or equal to n:
-
-```
-n ! = n x (n - 1) x (n - 2) x (n - 3) ... (3) x (2) x (1)
-```
-
-For example, 4! = 4 × 3 × 2 × 1 = 24.\
-The value of 0! is 1. For negative input, please return -1.
-
 Please create your test cases and run the following command to verify the functionality of your program.
 ```
 bazel test tests:q7_student_test
 ```
-
-For question 5, 6, 7, if you want to run all the tests at the same time , you could run
-```
-bazel test tests:tests
-```
-
-Answer:
 
 
 ## Question 8 (20 Points. Medium)
