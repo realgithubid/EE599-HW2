@@ -112,10 +112,22 @@ Stack Overflow profile link:
 
 ## Question 5 (15 Points. Easy)
 
-Write a simple function ```std::string CPPLib::PrintIntro()``` in [cpplib.cc](src/lib/cpplib.cc) to print your name, email, and any information about you that you want (e.g. your major, your expertise, your interests, etc) and write a test using GTest for your finction in [tests/q5_student_test.cc](tests/q5_student_test.cc).
-We will run your code and see your printout!
+- Write a function that takes a string as an input and **reverses** its value. The function has no output. It changes the value of the input parameter. Write a simple function ```void CPPLib::Q5ReverseString(std::string &input)``` in [cpplib.cc](src/lib/cpplib.cc)
 
-Please create your test cases and run the following command to verify the functionality of your program.
+    - Example: Input: “EE599”, Output: “995EE”, string is stricted to be alphanumeric.
+    - You cannot use any new local variable of type *string or vector or array*, but you can create extra O(1) space, such as *int*. The reverse should happen **in place** (i.e. on the input string).
+
+
+- Write a function that takes a vector as an input and **reverses** its value. Write a simple function ```std::vector<int> CPPLib::Q5ReverseVector(std::vector<int> input)``` in [cpplib.cc](src/lib/cpplib.cc)
+
+    - Example: Input: {1,2,3,4}, Output: {4,3,2,1}. 
+    - Use of [stack](https://en.cppreference.com/w/cpp/container/stack) is recommended but not a must.
+
+- Write a function that converts a string to lower case. Write a simple function ```void CPPLib::Q5ToLower(std::string& )``` in [cpplib.cc](src/lib/cpplib.cc). The input string is strictly alphanumeric.
+    - Example: input: “EE599”, output: “ee599”
+    - Use of [transform](http://www.cplusplus.com/reference/algorithm/transform/) is recommended but not a must.
+
+For all of the three questions, write a test using GTest for your finction in [tests/q5_student_test.cc](tests/q5_student_test.cc).
 ```
 bazel test tests:q5_student_test
 ```
@@ -142,7 +154,31 @@ bazel test tests:q6_student_test
 
 ## Question 7 (30 Points. Medium)
 
-Write a function ```double CPPLib::CalFactorial(int N)``` in [cpplib.cc](src/lib/cpplib.cc) using recursion to find the factorial of any number. Your function should accept positive numbers and return the factorial value. Further, write several tests using GTest for your function in [tests/q7_student_test.cc](tests/q7_student_test.cc) and compute the time complexity of your implementation.
+Write a function ```map CPPLib::CalFactorial(const string& from, const string& to)``` in [cpplib.cc](src/lib/cpplib.cc). 
+Write a function that takes two strings from and to and determines if they are mappable.
+- Two strings are mappable if the characters in from can be replaced to get to.
+- Each character can only map to itself.
+- The output should be a map:
+    - Empty map if the mapping is not possible
+    - The actual map if the mapping was possible
+
+Example 1:
+Input: from = "add", to = "egg”
+Output: {(a->e), (d->g)}
+
+Example 2:
+Input: from = "extreme", to = "egg”
+Output: { }
+
+Example 3:
+Input: from = "harder", to = "waiter”
+Output: { }
+
+Example 4:
+Input: from = "aabbrr", to = "ddeekk”
+Output: {(a->d),(b->e), (r->k)}
+
+Further, write several tests using GTest for your function in [tests/q7_student_test.cc](tests/q7_student_test.cc) and compute the time complexity of your implementation.
 
 *Definition of the factorial function*\
 In mathematics, the factorial of a positive integer n, denoted by n!, is the product of all positive integers less than or equal to n:
