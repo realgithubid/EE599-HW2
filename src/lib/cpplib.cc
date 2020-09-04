@@ -4,11 +4,22 @@
 
 std::string CPPLib::PrintHelloWorld() { return "**** Hello World ****"; }
 
-// Question 5 Print your self-introduction
-std::string CPPLib::PrintIntro()
+// Question 5-1
+void CPPLib::Q5ReverseString(std::string &input)
 {
     // Please fill up this function.
-    return "";
+}
+
+// Question 5-2
+std::vector<int> CPPLib::Q5ReverseVector(std::vector<int> input)
+{
+    // Please fill up this function.
+}
+
+// Question 5-3
+void CPPLib::Q5ToLower(std::string& input)
+{
+    // Please fill up this function.
 }
 
 // Question 6
@@ -18,11 +29,10 @@ bool CPPLib::canBePalindrome(const std::string &str)
     return true;
 }
 
-// Question 7 Calculate the factorial number
-double CPPLib::CalFactorial(int N)
+// Question 7 
+std::map<char,char> CPPLib::CalFactorial(const std::string& from, const std::string& to)
 {
     // Please fill up this function.
-    return 0;
 }
 
 // Question 8
