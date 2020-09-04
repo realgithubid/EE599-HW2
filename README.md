@@ -133,7 +133,7 @@ Output: false.\
 Input: str = "aab".\
 Output: true.
 
-Write several tests using GTest for your function in [tests/q6_student_test.cc](tests/q6_student_test.cc).\
+Write several tests using GTest for your function in [tests/q6_student_test.cc](tests/q6_student_test.cc).
 
 Please create your test cases and run the following command to verify the functionality of your program.
 ```
@@ -166,27 +166,18 @@ bazel test tests:tests
 
 Answer:
 
-## Question 5 (15 Points. Easy)
-
-Write a simple function ```std::string CPPLib::PrintIntro()``` in [cpplib.cc](src/lib/cpplib.cc) to print your name, email, and any information about you that you want (e.g. your major, your expertise, your interests, etc) and write a test using GTest for your finction in [tests/q5_student_test.cc](tests/q5_student_test.cc).
-We will run your code and see your printout!
-
-Please create your test cases and run the following command to verify the functionality of your program.
-```
-bazel test tests:q5_student_test
-```
 
 ## Question 8 (20 Points. Medium)
 
- Write a function ```void kthPeek(std::vector<int> &input);``` in [cpplib.cc](src/lib/cpplib.cc) that 
+ Write a function ```void kthPeek(std::vector<int> &input, int k);``` in [cpplib.cc](src/lib/cpplib.cc) that 
  - Finds the kth smallest value of the vector, called target(the vector is not sorted)
  - It then rearranges the vector in such a way that it will have all the values lower than the target on the left side in ascending order and all the greater than the target value on the right side in descending order.
 
 Example:\
 Input: {637, 231, 123, 69, 43, 900, 10, 7, 21, 99, 0, 500}, k = 6.\
-Output: Output:{0, 7, 10, 21, 43, 69, 900, 637, 500, 231, 123, 99 }.\
+Output: Output:{0, 7, 10, 21, 43, 69, 900, 637, 500, 231, 123, 99 }.
 
-Write several tests using GTest for your function in [tests/q8_student_test.cc](tests/q8_student_test.cc).\
+Write several tests using GTest for your function in [tests/q8_student_test.cc](tests/q8_student_test.cc).
 
 Please create your test cases and run the following command to verify the functionality of your program.
 ```

@@ -10,15 +10,21 @@ std::string CPPLib::PrintIntro() {
 }
 
 
-// Question 6  Flatten a 2D vector
-std::vector<int> CPPLib::Flatten2DVector(const std::vector<std::vector<int>> &input) {
+// Question 6 
+bool canBePalindrome(const std::string &str) {
     // Please fill up this function.
-    std::vector<int> res = {};
-    return res;
+    
+    return true;
 }
 
 // Question 7 Calculate the factorial number
 double CPPLib::CalFactorial(int N) {
     // Please fill up this function.
     return 0;
+}
+
+// Question 8 
+void kthPeek(std::vector<int> &input, int k) {
+    // Please fill up this function.
+    
 }

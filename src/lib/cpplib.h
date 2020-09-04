@@ -25,7 +25,7 @@ class CPPLib {
   bool canBePalindrome(const std::string &str);
 
   //q8
-  void kthPeek(std::vector<int> &input);
+  void kthPeek(std::vector<int> &input, int k);
 
   private : 
 };
