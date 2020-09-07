@@ -154,7 +154,7 @@ bazel test tests:q6_student_test
 
 ## Question 7 (20 Points. Medium)
 
-Write a function ```std::map<char, char> CPPLib::CalFactorial(const std::string& from, const std::string& to)``` in [cpplib.cc](src/lib/cpplib.cc). 
+Write a function ```std::map<char, char> CPPLib::Mappable(const std::string& from, const std::string& to)``` in [cpplib.cc](src/lib/cpplib.cc). 
 Write a function that takes two strings from and to and determines if they are mappable.
 - Two strings are mappable if the characters in from can be replaced to get to.
 - You can assume characters are strictly lower cases.  
