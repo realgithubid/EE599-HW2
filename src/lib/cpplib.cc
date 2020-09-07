@@ -30,7 +30,7 @@ bool CPPLib::canBePalindrome(const std::string &str)
 }
 
 // Question 7 
-std::map<char,char> CPPLib::CalFactorial(const std::string& from, const std::string& to)
+std::map<char,char> CPPLib::Mappable(const std::string& from, const std::string& to)
 {
     // Please fill up this function.
 }
