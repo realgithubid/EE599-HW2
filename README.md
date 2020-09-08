@@ -26,63 +26,10 @@ Answer:
 
 ## Question 2 (20 Points. Medium)
 
-What is the time complexity of the below functions?
-
-```cpp
-int Example1(int n) {
-   int count = 0;
-   for (int i = n; i > 0; i /= 2) {
-       for (int j = 0; j < i; j++) {
-           count += 1;
-       }
-   }
-   return count;
-}
-```
-
-Answer:
-
-```cpp
-void Example2(int a = 0, int n) {
-   int i = n;
-   while (i > 0) {
-       a += i;
-       i /= 2;
-   }
-}
-```
-
-Answer:
-
-```cpp
-void Example3(int n) {
-   int count = 0;
-   for (int i=n/2; i<=n; i++) {
-       for (int j=1; j<=n; j = 2 * j) {
-           for (int k=1; k<=n; k = k * 2) {
-               count++;
-           }
-       }
-   }
-}
-```
-
-Answer:
-
-```cpp
-void Example4(int n) {
-   int count = 0;
-   for (int i=0; i<n; i++)
-       for (int j=i; j< i*i; j++)
-           if (j%i == 0)
-           {
-               for (int k=0; k<j; k++)
-                   cout<<"*";
-           }
-}
-```
-
-Answer:
+How would you find the size of a non-dynamic array? (We are asking about an array, not a vector). Provide the example and outputs of your run for:
+- An array of integers
+- An array of chars
+- An array of floats
 
 ## Question 3 (10 Points. Easy)
 
