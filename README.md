@@ -23,6 +23,13 @@ Examples:
 - input: (“abc”, “efg”), output: “abcdefg”
 - input: (“EE”, 599), output: “EE599”
 
+Write several tests using GTest for your function in [tests/q1_student_test.cc](tests/q1_student_test.cc).
+
+Please create your test cases and run the following command to verify the functionality of your program.
+```
+bazel test tests:q1_student_test
+```
+
 ## Question 2 (20 Points. Medium)
 
 How would you find the size of a non-dynamic array? (We are asking about an array, not a vector). Provide the example and outputs of your run for:
@@ -44,10 +51,18 @@ Implement this using
 - **pass by pointers**
 
   ```void CPPLib::SwapByPointer(int *input1, int *input2);```
+
 Example :\
 Before: x = 20, y = 30 \
 We call Swap(x,y) \
 After: x = 30, y = 20
+
+Write several tests using GTest for your function in [tests/q3_student_test.cc](tests/q3_student_test.cc).
+
+Please create your test cases and run the following command to verify the functionality of your program.
+```
+bazel test tests:q3_student_test
+```
 
 ## Question 4 (25 Points. Easy)
 
@@ -68,6 +83,13 @@ After: x = 30, y = 20
   - Example: input: ([1, 2, 3], [3, 5, 6]): output: [1, 2, 3, 3, 5, 6]
 - Write a function ```std::vector<int> CPPLib::UnionVectors(std::vector<int> &input)``` that takes two vectors v1 and v2 and returns a new vector that is the **union** of the values in v1 and v2. All the value in return vector should be unique.
   - Example: input: (v1=[1, 2, 2, 3], v2=[3, 4, 4, 5]), output = [1, 2, 3, 4, 5]
+
+Write several tests using GTest for your function in [tests/q34student_test.cc](tests/q4_student_test.cc).
+
+Please create your test cases and run the following command to verify the functionality of your program.
+```
+bazel test tests:q4_student_test
+```
 
 ## Question 5 (15 Points. Easy)
 
