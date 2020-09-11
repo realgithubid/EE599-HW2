@@ -3,14 +3,14 @@
 
 - Plesae clone the repository, edit [README.md](README.md) to answer the questions, and fill up functions to finish the hw.
 - For non-coding quesitions, you will find **Answer** below each question. Please write your answer there.
-- For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc).
+- For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests).
 - For submission, please push your answers to Github before the deadline.
 - Deadline: Friday, September 4th by 6:30 pm
 - Total: 130 points. 100 points is considered full credit.
 
 ## Question 1 (10 Points. Easy)
 
-Write several functions with the same name ````myfunction``` in [cpplib.cc](src/lib/cpplib.cc). And using function overloading to satisfy the following requirements:
+Write several functions with the same name ```myfunction``` in [cpplib.cc](src/lib/cpplib.cc). And using function overloading to satisfy the following requirements:
 
 - All three functions take 2 parameters as the input.
 - If both inputs are integers perform addition and return the result.
@@ -91,17 +91,17 @@ bazel test tests:q4_student_test
 
 ## Question 5 (15 Points. Easy)
 
-- Write a function that takes a string as an input and **reverses** its value. The function has no output. It changes the value of the input parameter. Write a simple function ```void CPPLib::Q5ReverseString(std::string &input)``` in [cpplib.cc](src/lib/cpplib.cc). *You are welcomed to call existing STL functions*.
+- Write a function that takes a string as an input and **reverses** its value. The function has no output. It changes the value of the input parameter. Write a simple function ```void CPPLib::ReverseString(std::string &input)``` in [cpplib.cc](src/lib/cpplib.cc). *You are welcomed to call existing STL functions*.
 
   - Example: Input: “EE599”, Output: “995EE”, string is stricted to be alphanumeric.
   - You cannot use any new local variable of type *string or vector or array*, but you can create extra O(1) space, such as *int*. The reverse should happen **in place** (i.e. on the input string).
 
-- Write a function that takes a vector as an input and **reverses** its value. Write a simple function ```std::vector<int> CPPLib::Q5ReverseVector(std::vector<int> input)``` in [cpplib.cc](src/lib/cpplib.cc)
+- Write a function that takes a vector as an input and **reverses** its value. Write a simple function ```std::vector<int> CPPLib::ReverseVector(std::vector<int> input)``` in [cpplib.cc](src/lib/cpplib.cc)
 
   - Example: Input: {1,2,3,4}, Output: {4,3,2,1}. 
   - Use of [stack](https://en.cppreference.com/w/cpp/container/stack) is recommended but not a must.
 
-- Write a function that converts a string to lower case. Write a simple function ```void CPPLib::Q5ToLower(std::string& )``` in [cpplib.cc](src/lib/cpplib.cc). The input string is strictly alphanumeric.
+- Write a function that converts a string to lower case. Write a simple function ```void CPPLib::ToLower(std::string& )``` in [cpplib.cc](src/lib/cpplib.cc). The input string is strictly alphanumeric.
   - Example: input: “EE599”, output: “ee599”
   - Use of [transform](http://www.cplusplus.com/reference/algorithm/transform/) is recommended but not a must.
 
