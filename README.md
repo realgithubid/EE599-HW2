@@ -1,16 +1,16 @@
 
-# HW1 EE599 - Computing Principles for Electrical Engineers
+# HW2 EE599 - Computing Principles for Electrical Engineers
 
 - Plesae clone the repository, edit [README.md](README.md) to answer the questions, and fill up functions to finish the hw.
 - For non-coding quesitions, you will find **Answer** below each question. Please write your answer there.
-- For coding questions, please make sure that your code can run ```blaze run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc), [q5_student_test.cc](tests/q5_student_test.cc), [q6_student_test.cc](tests/q6_student_test.cc), [q7_student_test.cc](tests/q7_student_test.cc) for question  5, 6, 7.
+- For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc).
 - For submission, please push your answers to Github before the deadline.
 - Deadline: Friday, September 4th by 6:30 pm
-- Total: 120 points. 100 points is considered full credit.
+- Total: 130 points. 100 points is considered full credit.
 
 ## Question 1 (10 Points. Easy)
 
-Write several functions with the same name Add using function overloading to satisfy the following requirements:
+Write several functions with the same name ````myfunction`` in [cpplib.cc](src/lib/cpplib.cc). And using function overloading to satisfy the following requirements:
 
 - All three functions take 2 parameters as the input.
 - If both inputs are integers perform addition and return the result.
@@ -18,56 +18,72 @@ Write several functions with the same name Add using function overloading to sat
 - If the first input is an integer and the second input is a string or vice-versa your code should return a string that will hold the concatenated value of both the inputs.
 
 Examples:
+
 - input: (3, 5), output: 8
 - input: (“abc”, “efg”), output: “abcdefg”
 - input: (“EE”, 599), output: “EE599”
 
-Answer:
-
 ## Question 2 (20 Points. Medium)
 
 How would you find the size of a non-dynamic array? (We are asking about an array, not a vector). Provide the example and outputs of your run for:
+
 - An array of integers
 - An array of chars
 - An array of floats
 
+Answer:
+
 ## Question 3 (10 Points. Easy)
 
-What does it mean when we say that the Merge Sort (MS) algorithm is asymptotically more efficient than the Bubble Sort (BS) algorithm? Support your choice with an explanation.
+Write a function swap that will swap the values of the inputs (two integers).
+Implement this using
 
-1. MS will always be a better choice for small inputs
-2. MS will always be a better choice for large inputs
-3. BS will always be a better choice for small inputs
-4. MS will always be a better choice for all inputs
+- **pass by references**
 
-Answer:
+  ```void CPPLib::SwapByRefernce(int &input1, int &input2);```
+- **pass by pointers**
 
-## Question 4 (10 Points. Easy)
+  ```void CPPLib::SwapByPointer(int *input1, int *input2);```
+Example :\
+Before: x = 20, y = 30 \
+We call Swap(x,y) \
+After: x = 30, y = 20
 
-Create an account on GitHub and Stack Overflow and paste the link to your profile.
+## Question 4 (25 Points. Easy)
 
-Answer:
+- Write a function that takes a vector of integers as input. The output is the same vector where all duplicates are removed. Note that the output is the same vector means the function's return type should be void and do the modifications on the input vector.
+  - Example: before: v=[1, 2, 2, 4], after : v=[1, 2, 4]
+  - Solve this for the following cases:
+    - You cannot use std::set
+  
+    ```void CPPLib::UniqeVectorNotBySet(std::vector<int> &input)```
+    - You can use std::set
 
-GitHub profile link:
-
-Stack Overflow profile link:
+    ```void CPPLib::UniqeVectorBySet(std::vector<int> &input)```
+- Write a function ```void CPPLib::ReverseVector(std::vector<int> &input)``` that takes a vector of integers as input. The output is the same vector but in reversed order:
+  - Example: before: [1, 2, 3], after:  [3, 2, 1]
+- Write a function ```void CPPLib::OddVector(std::vector<int> &input)``` that takes a vector of integers as input. The output should be the same vector where all even numbers are removed.
+  - Example: before: [1, 2, 3], after: [1, 3]
+- Write a function ```std::vector<int> CPPLib::ConcatenateVectors(std::vector<int> &input)``` that takes two vectors of integers as input, and returns a new vector formed by concatenating the two input vectors.
+  - Example: input: ([1, 2, 3], [3, 5, 6]): output: [1, 2, 3, 3, 5, 6]
+- Write a function ```std::vector<int> CPPLib::UnionVectors(std::vector<int> &input)``` that takes two vectors v1 and v2 and returns a new vector that is the **union** of the values in v1 and v2. All the value in return vector should be unique.
+  - Example: input: (v1=[1, 2, 2, 3], v2=[3, 4, 4, 5]), output = [1, 2, 3, 4, 5]
 
 ## Question 5 (15 Points. Easy)
 
 - Write a function that takes a string as an input and **reverses** its value. The function has no output. It changes the value of the input parameter. Write a simple function ```void CPPLib::Q5ReverseString(std::string &input)``` in [cpplib.cc](src/lib/cpplib.cc). *You are welcomed to call existing STL functions*.
 
-    - Example: Input: “EE599”, Output: “995EE”, string is stricted to be alphanumeric.
-    - You cannot use any new local variable of type *string or vector or array*, but you can create extra O(1) space, such as *int*. The reverse should happen **in place** (i.e. on the input string).
-
+  - Example: Input: “EE599”, Output: “995EE”, string is stricted to be alphanumeric.
+  - You cannot use any new local variable of type *string or vector or array*, but you can create extra O(1) space, such as *int*. The reverse should happen **in place** (i.e. on the input string).
 
 - Write a function that takes a vector as an input and **reverses** its value. Write a simple function ```std::vector<int> CPPLib::Q5ReverseVector(std::vector<int> input)``` in [cpplib.cc](src/lib/cpplib.cc)
 
-    - Example: Input: {1,2,3,4}, Output: {4,3,2,1}. 
-    - Use of [stack](https://en.cppreference.com/w/cpp/container/stack) is recommended but not a must.
+  - Example: Input: {1,2,3,4}, Output: {4,3,2,1}. 
+  - Use of [stack](https://en.cppreference.com/w/cpp/container/stack) is recommended but not a must.
 
 - Write a function that converts a string to lower case. Write a simple function ```void CPPLib::Q5ToLower(std::string& )``` in [cpplib.cc](src/lib/cpplib.cc). The input string is strictly alphanumeric.
-    - Example: input: “EE599”, output: “ee599”
-    - Use of [transform](http://www.cplusplus.com/reference/algorithm/transform/) is recommended but not a must.
+  - Example: input: “EE599”, output: “ee599”
+  - Use of [transform](http://www.cplusplus.com/reference/algorithm/transform/) is recommended but not a must.
 
 For all of the three questions, write a test using GTest for your finction in [tests/q5_student_test.cc](tests/q5_student_test.cc).
 ```
@@ -96,14 +112,15 @@ bazel test tests:q6_student_test
 
 ## Question 7 (20 Points. Medium)
 
-Write a function ```std::map<char, char> CPPLib::Mappable(const std::string& from, const std::string& to)``` in [cpplib.cc](src/lib/cpplib.cc). 
+Write a function ```std::map<char, char> CPPLib::Mappable(const std::string& from, const std::string& to)``` in [cpplib.cc](src/lib/cpplib.cc).
 Write a function that takes two strings from and to and determines if they are mappable.
+
 - Two strings are mappable if the characters in from can be replaced to get to.
 - You can assume characters are strictly lower cases.  
 - Each character can only map to itself.
 - The output should be a map:
-    - Empty map if the mapping is not possible
-    - The actual map if the mapping was possible
+  - Empty map if the mapping is not possible
+  - The actual map if the mapping was possible
 
 Example 1:
 Input: from = "add", to = "egg”
@@ -128,12 +145,12 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q7_student_test
 ```
 
-
 ## Question 8 (20 Points. Medium)
 
- Write a function ```void kthPeek(std::vector<int> &input, int k);``` in [cpplib.cc](src/lib/cpplib.cc) that 
- - Finds the kth smallest value of the vector, called target(the vector is not sorted)
- - It then rearranges the vector in such a way that it will have all the values lower than the target on the left side in ascending order and all the greater than the target value on the right side in descending order.
+ Write a function ```void kthPeek(std::vector<int> &input, int k);``` in [cpplib.cc](src/lib/cpplib.cc) that
+
+- Finds the kth smallest value of the vector, called target(the vector is not sorted)
+- It then rearranges the vector in such a way that it will have all the values lower than the target on the left side in ascending order and all the greater than the target value on the right side in descending order.
 
 Example:\
 Input: {637, 231, 123, 69, 43, 900, 10, 7, 21, 99, 0, 500}, k = 6.\

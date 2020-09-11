@@ -10,16 +10,17 @@
  */
 class CPPLib {
  public:
-  std::string PrintHelloWorld();
+  //q3
+  void CPPLib::SwapByRefernce(int &input1, int &input2);
+  void CPPLib::SwapByPointer(int *input1, int *input2);
 
-  // Print your self-introduction
-  std::string PrintIntro();
-  
-  // Calculate the factorial number
-  double CalFactorial(int N);
-  
-  // // Flatten a 2D vector
-  std::vector<int> Flatten2DVector(const std::vector<std::vector<int>>&input);
+  //q4
+  void CPPLib::UniqeVectorNotBySet(std::vector<int> &input);
+  void CPPLib::UniqeVectorBySet(std::vector<int> &input);
+  void CPPLib::ReverseVector(std::vector<int> &input);
+  void CPPLib::OddVector(std::vector<int> &input);
+  std::vector<int> CPPLib::ConcatenateVectors(std::vector<int> &input);
+  std::vector<int> CPPLib::UnionVectors(std::vector<int> &input);
 
   //q5
   void Q5ReverseString(std::string &input);

@@ -1,22 +1,46 @@
 #include "cpplib.h"
 #include "limits"
 
+// Question 1
+// Please create your function here.
 
-std::string CPPLib::PrintHelloWorld() { return "**** Hello World ****"; }
+// Question 3
+void CPPLib::SwapByRefernce(int &input1, int &input2){
+    // Please fill up this function.
+}
+void CPPLib::SwapByPointer(int *input1, int *input2){
+    // Please fill up this function.
+}
 
-// Question 5-1
+// Question 4
+void CPPLib::UniqeVectorNotBySet(std::vector<int> &input){
+    // Please fill up this function.
+}
+void CPPLib::UniqeVectorBySet(std::vector<int> &input){
+    // Please fill up this function.
+}
+void CPPLib::ReverseVector(std::vector<int> &input){
+    // Please fill up this function.
+}
+void CPPLib::OddVector(std::vector<int> &input){
+    // Please fill up this function.
+}
+std::vector<int> CPPLib::ConcatenateVectors(std::vector<int> &input){
+    // Please fill up this function.
+}
+std::vector<int> CPPLib::UnionVectors(std::vector<int> &input){
+    // Please fill up this function.
+}
+
+// Question 5
 void CPPLib::Q5ReverseString(std::string &input)
 {
     // Please fill up this function.
 }
-
-// Question 5-2
 std::vector<int> CPPLib::Q5ReverseVector(std::vector<int> input)
 {
     // Please fill up this function.
 }
-
-// Question 5-3
 void CPPLib::Q5ToLower(std::string& input)
 {
     // Please fill up this function.
