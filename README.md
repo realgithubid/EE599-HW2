@@ -99,7 +99,7 @@ bazel test tests:q4_student_test
 - Write a function that takes a vector as an input and **reverses** its value. Write a simple function ```std::vector<int> CPPLib::ReverseVector(std::vector<int> input)``` in [cpplib.cc](src/lib/cpplib.cc)
 
   - Example: Input: {1,2,3,4}, Output: {4,3,2,1}. 
-  - Use of [stack](https://en.cppreference.com/w/cpp/container/stack) is recommended but not a must.
+  - Use of [stack](https://en.cppreference.com/w/cpp/container/stack) is needed.
 
 - Write a function that converts a string to lower case. Write a simple function ```void CPPLib::ToLower(std::string& )``` in [cpplib.cc](src/lib/cpplib.cc). The input string is strictly alphanumeric.
   - Example: input: “EE599”, output: “ee599”
