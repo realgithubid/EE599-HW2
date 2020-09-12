@@ -10,22 +10,23 @@
  */
 class CPPLib {
  public:
+  //q1
+  // Please create your function here.
   //q3
-  void CPPLib::SwapByRefernce(int &input1, int &input2);
-  void CPPLib::SwapByPointer(int *input1, int *input2);
+  void SwapByRefernce(int &input1, int &input2);
+  void SwapByPointer(int *input1, int *input2);
 
   //q4
-  void CPPLib::UniqeVectorNotBySet(std::vector<int> &input);
-  void CPPLib::UniqeVectorBySet(std::vector<int> &input);
-  void CPPLib::ReverseVector(std::vector<int> &input);
-  void CPPLib::OddVector(std::vector<int> &input);
-  std::vector<int> CPPLib::ConcatenateVectors(std::vector<int> &input);
-  std::vector<int> CPPLib::UnionVectors(std::vector<int> &input);
+  void UniqeVectorNotBySet(std::vector<int> &input);
+  void UniqeVectorBySet(std::vector<int> &input);
+  void ReverseVector(std::vector<int> &input);
+  void OddVector(std::vector<int> &input);
+  std::vector<int> UnionVectors(std::vector<int> &input);
 
   //q5
-  void Q5ReverseString(std::string &input);
-  std::vector<int> Q5ReverseVector(std::vector<int> input);
-  void Q5ToLower(std::string& input);
+  void ReverseString(std::string &input);
+  std::vector<int> ReverseVector(std::vector<int> input);
+  void ToLower(std::string& input);
 
   //q6 
   bool canBePalindrome(const std::string &str);

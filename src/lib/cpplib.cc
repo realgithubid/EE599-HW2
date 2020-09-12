@@ -25,23 +25,20 @@ void CPPLib::ReverseVector(std::vector<int> &input){
 void CPPLib::OddVector(std::vector<int> &input){
     // Please fill up this function.
 }
-std::vector<int> CPPLib::ConcatenateVectors(std::vector<int> &input){
-    // Please fill up this function.
-}
 std::vector<int> CPPLib::UnionVectors(std::vector<int> &input){
     // Please fill up this function.
 }
 
 // Question 5
-void CPPLib::Q5ReverseString(std::string &input)
+void CPPLib::ReverseString(std::string &input)
 {
     // Please fill up this function.
 }
-std::vector<int> CPPLib::Q5ReverseVector(std::vector<int> input)
+std::vector<int> CPPLib::ReverseVector(std::vector<int> input)
 {
     // Please fill up this function.
 }
-void CPPLib::Q5ToLower(std::string& input)
+void CPPLib::ToLower(std::string& input)
 {
     // Please fill up this function.
 }
