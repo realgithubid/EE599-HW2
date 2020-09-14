@@ -174,7 +174,7 @@ bazel test tests:q7_student_test
 
 Example:\
 Input: {637, 231, 123, 69, 43, 900, 10, 7, 21, 99, 0, 500}, k = 6.\
-Output: Output:{0, 7, 10, 21, 43, 69, 900, 637, 500, 231, 123, 99 }.
+Output: Output:{0, 7, 10, 21, 43, 69, 900, 637, 500, 231, 123, 99 }. (target = 69)
 
 Write several tests using GTest for your function in [tests/q8_student_test.cc](tests/q8_student_test.cc).
 
