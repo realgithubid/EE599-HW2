@@ -10,7 +10,7 @@
 
 Name: \
 USC ID: \
-Email: \
+Email:
 
 ## Question 1 (10 Points. Easy)
 
