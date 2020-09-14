@@ -8,9 +8,9 @@
 - Deadline: Friday, September 25th by 6:30 pm
 - Total: 130 points. 100 points is considered full credit.
 
-Name:
-USC ID:
-Email:
+Name: \
+USC ID: \
+Email: \
 
 ## Question 1 (10 Points. Easy)
 
