@@ -2,7 +2,7 @@
 #include "limits"
 
 // Question 1
-// Please create your function here.
+// Please create your functions here.
 
 // Question 3
 void CPPLib::SwapByRefernce(int &input1, int &input2){
