@@ -8,6 +8,10 @@
 - Deadline: Friday, September 25th by 6:30 pm
 - Total: 130 points. 100 points is considered full credit.
 
+Name:
+USC ID:
+Email:
+
 ## Question 1 (10 Points. Easy)
 
 Write several functions with the same name ```myfunction``` in [cpplib.cc](src/lib/cpplib.cc). And using function overloading to satisfy the following requirements:
