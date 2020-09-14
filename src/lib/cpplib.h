@@ -11,7 +11,7 @@
 class CPPLib {
  public:
   //q1
-  // Please create your function here.
+  // Please create your functions here.
   //q3
   void SwapByRefernce(int &input1, int &input2);
   void SwapByPointer(int *input1, int *input2);
