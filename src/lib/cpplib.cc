@@ -25,7 +25,7 @@ void CPPLib::ReverseVector(std::vector<int> &input){
 void CPPLib::OddVector(std::vector<int> &input){
     // Please fill up this function.
 }
-std::vector<int> CPPLib::UnionVectors(std::vector<int> &input){
+std::vector<int> CPPLib::UnionVectors(std::vector<int> &input1, std::vector<int> &input2){
     // Please fill up this function.
 }
 
