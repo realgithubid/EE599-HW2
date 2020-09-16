@@ -21,7 +21,7 @@ class CPPLib {
   void UniqeVectorBySet(std::vector<int> &input);
   void ReverseVector(std::vector<int> &input);
   void OddVector(std::vector<int> &input);
-  std::vector<int> UnionVectors(std::vector<int> &input);
+  std::vector<int> CPPLib::UnionVectors(std::vector<int> &input1, std::vector<int> &input2);
 
   //q5
   void ReverseString(std::string &input);
