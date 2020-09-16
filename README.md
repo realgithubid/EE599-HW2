@@ -79,7 +79,7 @@ bazel test tests:q3_student_test
   - Example: before: [1, 2, 3], after:  [3, 2, 1]
 - Write a function ```void CPPLib::OddVector(std::vector<int> &input)``` that takes a vector of integers as input. The output should be the same vector where all even numbers are removed.
   - Example: before: [1, 2, 3], after: [1, 3]
-- Write a function ```std::vector<int> CPPLib::UnionVectors(std::vector<int> &input)``` that takes two vectors v1 and v2 and returns a new vector that is the **union** of the values in v1 and v2. All the value in return vector should be unique.
+- Write a function ```std::vector<int> CPPLib::UnionVectors(std::vector<int> &input1, std::vector<int> &input2)``` that takes two vectors v1 and v2 and returns a new vector that is the **union** of the values in v1 and v2. All the value in return vector should be unique.
   - Example: input: (v1=[1, 2, 2, 3], v2=[3, 4, 4, 5]), output = [1, 2, 3, 4, 5]
 
 Write several tests using GTest for your function in [tests/q4student_test.cc](tests/q4_student_test.cc).
