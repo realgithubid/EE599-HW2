@@ -3,6 +3,7 @@
 
 // Question 1
 // Please create your functions here.
+// You should write 4 functions
 
 // Question 3
 void CPPLib::SwapByRefernce(int &input1, int &input2){
@@ -34,7 +35,7 @@ void CPPLib::ReverseString(std::string &input)
 {
     // Please fill up this function.
 }
-std::vector<int> CPPLib::ReverseVector(std::vector<int> input)
+std::vector<int> CPPLib::ReverseVector_1(std::vector<int> input)
 {
     // Please fill up this function.
 }

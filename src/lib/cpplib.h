@@ -25,7 +25,7 @@ class CPPLib {
 
   //q5
   void ReverseString(std::string &input);
-  std::vector<int> ReverseVector(std::vector<int> input);
+  std::vector<int> ReverseVector_1(std::vector<int> input);
   void ToLower(std::string& input);
 
   //q6 

@@ -96,7 +96,7 @@ bazel test tests:q4_student_test
   - Example: Input: “EE599”, Output: “995EE”, string is stricted to be alphanumeric.
   - You cannot use any new local variable of type *string or vector or array*, but you can create extra O(1) space, such as *int*. The reverse should happen **in place** (i.e. on the input string).
 
-- Write a function that takes a vector as an input and **reverses** its value. Write a simple function ```std::vector<int> CPPLib::ReverseVector(std::vector<int> input)``` in [cpplib.cc](src/lib/cpplib.cc)
+- Write a function that takes a vector as an input and **reverses** its value. Write a simple function ```std::vector<int> CPPLib::ReverseVector_1(std::vector<int> input)``` in [cpplib.cc](src/lib/cpplib.cc)
 
   - Example: Input: {1,2,3,4}, Output: {4,3,2,1}. 
   - Use of [stack](https://en.cppreference.com/w/cpp/container/stack) is needed.
