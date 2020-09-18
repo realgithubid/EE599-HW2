@@ -20,7 +20,7 @@ Write several functions with the same name ```myfunction``` in [cpplib.cc](src/l
 Examples:
 
 - input: (3, 5), output: 15
-- input: (“abc”, “efg”), output: “abcdefg”
+- input: (“abc”, “efg”), output: “abcefg”
 - input: (“EE”, 599), output: “EE599”
 
 Write several tests using GTest for your function in [tests/q1_student_test.cc](tests/q1_student_test.cc).
